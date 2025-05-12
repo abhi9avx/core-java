@@ -1,0 +1,211 @@
+Object orientede tries to map code instruction with the real world making the code short and easier to understand
+
+what is oops
+Solving a problem by creating a object is one of the the most popular approch in proggramming language , this is called as OOPS
+
+
+what is DRY?
+DRY stand for Do nt repeat yourself (focus on code reusebility)
+
+class -> A class s a blue print of creating object
+example - >
+class (Contain info to create a valid object)  -> object instantiation -> object
+jee application form -> filled by student -> application for that student
+
+object -> object is a instantiation of a clas , when a class is defined a templates (info) is defied  , memory is allocated only afer the object instantiation
+
+
+hoe to model a problem in oops ?
+WE IDENTIFY TEH FOLLLWING
+Noun -> class -> Employee
+Adjective -> Attributes(PROPERTIES)  -> name , age , salary
+Verb -> METHOD -> GETsLARY() , INCREAMENT ()
+
+-----------------------------------------------------------------------------------------------
+
+🌍 What is OOP (Object-Oriented Programming)?
+
+Object-Oriented Programming is a programming paradigm that models real-world entities as objects in code.
+It makes code easier to manage, reuse, and understand by closely mapping code instructions to real-world things.
+
+⸻
+
+🧠 Why Use OOP?
+	•	✅ Helps in writing modular and maintainable code
+	•	✅ Follows the DRY Principle (Don’t Repeat Yourself)
+	•	✅ Encourages code reusability using objects and classes
+	•	✅ Makes problem-solving more intuitive by thinking in terms of real-world objects
+
+⸻
+
+🧱 What is a Class?
+
+A class is like a blueprint or template to create objects.
+It defines the structure (attributes) and behavior (methods) of an object.
+
+📦 Example:
+
+class Employee {
+    String name;
+    int age;
+    double salary;
+
+    void getSalary() {
+        // logic to return salary
+    }
+
+    void increment() {
+        // logic to increase salary
+    }
+}
+
+
+⸻
+
+👤 What is an Object?
+
+An object is an instance of a class.
+Memory is allocated only when an object is created, not when the class is defined.
+
+📄 Think of:
+	•	🧾 Class: JEE Application Form Template
+	•	🧍 Object: A form filled and submitted by a student
+Each student → One object based on the same class.
+
+⸻
+
+🔁 What is DRY in OOP?
+
+DRY = Don’t Repeat Yourself
+
+Instead of repeating logic, OOP promotes code reuse through:
+	•	Inheritance
+	•	Functions (methods)
+	•	Class reuse
+
+⸻
+
+🛠️ How to Model a Problem Using OOP?
+
+To convert a real-world problem into code using OOP:
+
+Real World Part	OOP Mapping	Example
+Noun	Class	Employee
+Adjective	Attributes / Properties	name, age, salary
+Verb	Methods / Functions	getSalary(), increment()
+
+This method of thinking helps you break down problems into manageable code units.
+
+⸻
+
+-------------------------------------------------------------------
+
+🌐 OOPs Kya Hota Hai?
+
+OOPs (Object-Oriented Programming) ek aisa programming style hai jisme real world cheezon ko code mein object ke form mein represent kiya jata hai.
+
+🧠 Object-oriented approach ka main focus hota hai:
+	•	Code ko real-world jaisa banana
+	•	Code ko short, readable, aur manageable banana
+
+⸻
+
+🔁 DRY Principle Kya Hai?
+
+DRY ka full form hai – Don’t Repeat Yourself.
+Matlab: ek hi logic baar-baar likhne ke bajaye reuse karna chahiye, jaise methods, functions, classes ke through.
+
+⸻
+
+🏗️ Class Kya Hoti Hai?
+
+Class ek template (ya blueprint) hota hai jisse object banaya jata hai.
+Ye batata hai ki ek object ke kya properties (attributes) aur kya actions (methods) honge.
+
+📄 Example:
+Socho JEE application form – ye ek class hai.
+Jab koi student form bharta hai, to ek specific object ban jaata hai us student ke liye.
+
+class Employee {
+    String name;
+    int age;
+    double salary;
+
+    void getSalary() {
+        // salary return karne ka logic
+    }
+
+    void increment() {
+        // salary badhane ka logic
+    }
+}
+
+
+⸻
+
+👤 Object Kya Hota Hai?
+
+Object class ka ek instance (copy) hota hai.
+Jab tak object create nahi hota, tab tak memory allocate nahi hoti.
+Jab hum class se object banate hain, tabhi wo real data ke saath kaam karta hai.
+
+🧍 Example:
+	•	Employee e1 = new Employee(); → yeh e1 ek object hai jo Employee class ka bana hai.
+
+⸻
+
+🧠 OOPs Mein Problem Ko Kaise Model Karein?
+
+Real-world problem ko object-oriented way mein model karne ke liye hum 3 cheezein identify karte hain:
+
+Real World	Code Mapping	Example
+Noun	Class	Employee
+Adjective	Attributes/Properties	name, age, salary
+Verb	Method/Action	getSalary(), increment()
+
+
+⸻
+
+✅ OOPs Kya Laata Hai?
+	•	Code zyada clean aur organized hota hai
+	•	Reuse kar sakte ho bina same cheez baar-baar likhe
+	•	Real world problems ko model karna easy ho jata hai
+
+⸻-------------------------------------------------
+
+🔑 OOPS Terminology
+
+1. Abstraction
+
+→ Hiding the internal details [ Show only essential info ]
+Real Example: Use this phone without bothering about how it was made.
+
+⸻
+
+2. Encapsulation
+
+→ The act of putting various components together (in a capsule)
+Example: Laptop is a single entity with WiFi + Speaker + Storage in a single box!
+In Java, encapsulation simply means that the sensitive data can be hidden from the users.
+
+⸻
+
+3. Inheritance
+
+→ The act of deriving new things from existing things
+Examples:
+Rickshaw → E-Rickshaw
+Phone → SmartPhone
+Implement DRY!
+
+⸻
+
+4. Polymorphism
+
+→ One entity, many forms
+Examples:
+SmartPhone → Phone
+SmartPhone → Calculator
+SmartPhone → Camera
+
+⸻
