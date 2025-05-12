@@ -1,3 +1,5 @@
+package com.company;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -30,7 +32,7 @@ Recap:
 	•	Import → Java ke dusre features ko lane ke liye (optional)
 	•	Interface → Advance OOP ke liye (optional)
 	•	Class → Har Java code ko class ke andar likhna zaroori hai
-	•	Main Method → Execution yahin se hota hai — yeh mandatory hai
+	•	com.company.Main Method → Execution yahin se hota hai — yeh mandatory hai
 
 
 Data Type
