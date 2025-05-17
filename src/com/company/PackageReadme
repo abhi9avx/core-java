@@ -104,3 +104,11 @@ This model gives Java its powerful property:
 
 So far the execution of our program was being managed by intellij idea
 we can download a source code editor like vs code to compile and execute our java programm
+
+
+---------
+
+Package is used to group related classes package help in avoiding name conflict .There are 2 type of package
+1. Built in package  -> java api
+
+2. User defined package  -> custom package
