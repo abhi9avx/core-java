@@ -1,0 +1,47 @@
+
+Multithreading and Multiprocessing both are used to achieve the multi tasking
+
+Os -> process1 , process2 , process 3 ( MULTIPROCESS)
+
+whithin a process multitasking -> thread is used ( light weight )
+
+In a nut shell..
+thread use shared memory area
+thread -> faster context switching
+A thread is a light weight and process is a heavy weight
+
+Imp - > Flow of control in java
+
+1. without threading
+
+main()
+   └──> func1()
+            └──> func2()
+                   └──> END
+
+2. With Threading
+
+
+main()
+ ├──> func1() → runs in Thread-1
+ └──> func2() → runs in Thread-2
+
+
+create a thread
+
+There are two way to create a thread in java
+1. By extending thread class
+2. By implementing Rummable interface
+
+Life Cycle of a thread
+🔄 Life Cycle of a Thread
+	1.	New: Thread is created but not started.
+	2.	Runnable: start() is called, ready to run.
+	3.	Running: Thread is currently executing.
+	4.	Blocked/Waiting: Waiting for resources or signal.
+	5.	Terminated: Execution is complete or stopped.
+
+	New --> Runnable --> Running --> Terminated
+                        ↕
+                  Waiting / Blocked
+
