@@ -45,3 +45,18 @@ Life Cycle of a thread
                         ↕
                   Waiting / Blocked
 
+
+Concurrency is the task of running and managing the multiple computation at same time
+Parallelism is the task of running multiple computation simulteneously
+concurrency can be done by using single processing unit .
+
+
+//Agrument and parameter diff
+// Parameter: 'name' is the parameter
+void greet(String name) {
+    System.out.println("Hello, " + name);
+}
+
+// Argument: "Abhinav" is the argument
+greet("Abhinav");
+
