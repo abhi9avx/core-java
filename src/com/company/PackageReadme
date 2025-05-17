@@ -1,0 +1,106 @@
+Interpreter vs compiler
+
+Interpreter translates one statement at a time into machine code
+compiler scans the entire program and translate whole of it into machine code
+
+Interpreter :
+1. One statement at a time
+2. Interpreter is needed everytime
+3.Partial execution if error
+4. easy for programmer
+
+Compiler :
+1. Entire program at a time
+2. once compiled it is not needed
+3. No execution if an error occurs
+4. usually not as easy as interpreted ones
+
+Compiler is fast then interpreted
+
+Is jave compiled or interpreted?
+Java is a hybrid language -> both compiled as well as interpreted
+
+
+
+⸻--------------------------
+
+🔁 Interpreter vs Compiler (Summary)
+
+An interpreter translates and executes code one statement at a time. It is required every time the program runs. If an error is found, it stops and executes only the correct part up to the error, making it easier for programmers to debug. However, it is generally slower because the translation happens at runtime.
+
+A compiler, on the other hand, scans and translates the entire program at once into machine code. Once compiled, the program can run without the compiler. But if there are any errors, it won’t run at all until they are fixed. Compiled programs are faster in execution but can be harder to debug during development.
+
+In short:
+	•	Interpreter = easier to debug, slower to run.
+	•	Compiler = faster to run, but needs clean code before running.
+
+⸻
+
+☕ Is Java Compiled or Interpreted?
+
+Java is a hybrid language — it uses both compilation and interpretation.
+	•	First, the Java compiler converts source code (.java files) into bytecode (.class files).
+	•	Then, the Java Virtual Machine (JVM) either interprets the bytecode line by line or uses Just-In-Time (JIT) compilation to convert it into machine code for execution.
+
+This combination makes Java platform-independent, letting the same code run on any system that has a JVM installed — a principle known as “Write Once, Run Anywhere.”
+
+⸻-----
+
+Java File --(compiled) ----> class File -> can be used by java interpretor
+abhinav.java  -----(using javac) ------> abhinav.class (byte code)
+
+byte code can be used in any platform ( it is platform independent )
+java hybrid hai
+
+JVM can be used to interprete this byte code
+This byteCode can be taken to any platform (win / linux /mac) for execution
+Hence,  java is a platform independent ( write once and run everywhere )
+
+Executing a java program
+
+javac Abhinav.java -> compiled
+Java Abhinav.class  -> interpreted
+
+
+
+⸻----------
+
+☕ How Java Code is Executed (The Java Journey)
+
+When you write a Java program, let’s say:
+
+Abhinav.java — this is your source code written in human-readable form.
+
+🧑‍💻 Step 1: Compilation
+
+You use the Java compiler (javac) to compile the source file:
+
+javac Abhinav.java
+
+This creates a file called:
+
+Abhinav.class
+
+This .class file contains Bytecode – a special format that is not platform-specific. It’s not native machine code, but an intermediate code designed to run on any system.
+
+🌍 Step 2: Platform Independence with JVM
+
+The .class file (bytecode) is then passed to the Java Virtual Machine (JVM). This is where the magic happens:
+
+java Abhinav
+
+	•	The JVM interprets or JIT compiles the bytecode into machine code specific to your platform (Windows, Mac, Linux, etc.).
+	•	Since JVMs are available for all major platforms, the same bytecode can run anywhere — no need to recompile.
+
+🎯 Why is Java Platform Independent?
+	•	You compile once (to bytecode),
+	•	and run anywhere (thanks to JVM).
+
+That’s why Java is called a hybrid language — it combines compilation (javac) with interpretation (JVM).
+This model gives Java its powerful property:
+➡️ “Write Once, Run Anywhere.”
+
+⸻--------------
+
+So far the execution of our program was being managed by intellij idea
+we can download a source code editor like vs code to compile and execute our java programm
