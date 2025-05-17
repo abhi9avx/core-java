@@ -1,0 +1,161 @@
+
+
+✅ Is Multiple Inheritance Allowed in Java?
+
+🚫 Multiple Inheritance using Classes – Not Allowed
+
+In Java, a class cannot extend more than one class at the same time. This is done to avoid ambiguity, known as the Diamond Problem.
+
+⸻
+
+🔺 Example – The Diamond Problem:
+
+class A {
+    void show() {
+        System.out.println("Class A");
+    }
+}
+
+class B {
+    void show() {
+        System.out.println("Class B");
+    }
+}
+
+// ❌ Error – Java does not allow this
+class C extends A, B {
+    // Compilation Error: Class C cannot extend multiple classes
+}
+
+	•	Both class A and B have a method show().
+	•	If class C inherits both, which show() should be called?
+➡️ This creates confusion (ambiguity), so Java doesn’t support multiple class inheritance directly.
+
+⸻
+
+✅ Solution: Multiple Inheritance using Interfaces
+
+In Java, you can implement multiple interfaces and even extend one class at the same time.
+
+interface X {
+    void methodX();
+}
+
+interface Y {
+    void methodY();
+}
+
+class Base {
+    void baseMethod() {
+        System.out.println("Base class method");
+    }
+}
+
+// ✅ Multiple Inheritance using Interface + Single class
+class Derived extends Base implements X, Y {
+    public void methodX() {
+        System.out.println("Method X from Interface");
+    }
+
+    public void methodY() {
+        System.out.println("Method Y from Interface");
+    }
+}
+
+
+⸻
+
+🔍 Key Notes about Java Interfaces
+	1.	Interface ≠ Class, but it acts like a blueprint.
+	2.	An interface can contain:
+	•	Method signatures (abstract methods)
+	•	Constants (public static final)
+	•	Default and Static methods (from Java 8 onward)
+	3.	A class that implements an interface must define all the methods from that interface.
+	4.	You can create a reference of an interface type, but not an object.
+	5.	All methods in an interface are public and abstract by default (till Java 7).
+
+⸻
+
+🔸 Real-Life Analogy:
+
+Imagine:
+	•	RemoteControl is an interface.
+	•	TV, AC, Speaker are classes implementing it differently.
+
+This allows different devices to behave according to the same “template” (interface).
+
+⸻
+
+📘 Summary: Multiple Inheritance in Java
+
+Feature	Support in Java
+Multiple inheritance using classes	❌ Not supported
+Multiple inheritance using interfaces	✅ Supported
+Class can extend one class	✅ Yes
+Class can implement multiple interfaces	✅ Yes
+
+
+⸻
+
+✅ Example Summary Code:
+
+interface Animal {
+    void eat();
+}
+
+interface Bird {
+    void fly();
+}
+
+class LivingBeing {
+    void breathe() {
+        System.out.println("Breathing...");
+    }
+}
+
+class Bat extends LivingBeing implements Animal, Bird {
+    public void eat() {
+        System.out.println("Bat eats insects.");
+    }
+
+    public void fly() {
+        System.out.println("Bat flies at night.");
+    }
+}
+
+
+⸻
+
+✅ Output:
+
+Breathing...
+Bat eats insects.
+Bat flies at night.
+
+
+⸻
+
+📌 Final:
+	•	Multiple inheritance with classes leads to ambiguity → ❌ Not allowed.
+	•	Interfaces allow multiple inheritance behavior in a clean and conflict-free way.
+	•	This is a core OOP concept — often asked in Java interviews and system design basics.
+
+⸻
+
+Is mutiple inheritence is allowed in java ?
+Multiple inheritence face a problem ehen there exist method with same signature in both teh super class ,
+Due to such problem java clas not supported multiple inheritence directly but the similar concept can be achoeved using the interface
+
+
+But this can be achiecved using inteface
+
+A class can be implement multiple inteface and extend a xlass ata same time
+
+Note ->
+1. interface in java is a bit like a class but with a significat difference
+2. An interface can only have a method signature , constant field , and default method
+3. the clas implementing an interface need to be define the method (not necessary field)
+4. you can create a refence f interface but not object
+5.inteface method is public by default .
+
