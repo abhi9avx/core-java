@@ -60,3 +60,20 @@ void greet(String name) {
 // Argument: "Abhinav" is the argument
 greet("Abhinav");
 
+
+
+
+
+
+Life Cycle of a thread
+🔄 Life Cycle of a Thread
+	1.	New: Thread is created but not started.
+	2.	Runnable: start() is called, ready to run.
+	3.	Running: Thread is currently executing.
+	4.	Blocked/Waiting: Waiting for resources or signal.
+	5.	Terminated: Execution is complete or stopped.
+
+	New --> Runnable --> Running --> Terminated
+                        ↕
+                  Waiting / Blocked
+
