@@ -204,3 +204,7 @@ throws	Declare that a method might throw one	In method signature
 
 ⸻
 
+Finally Block
+
+Finally block contains teh code which is always executed whether the exception is handle or not .
+It is used to execute code containing instruction to release the system resources , close connection etc
