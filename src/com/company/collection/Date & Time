@@ -49,5 +49,12 @@ This is why modern Java recommends using java.time package, which is more accura
 	•	1000 * 60 gives minutes
 	•	1000 * 60 * 60 gives hours
 	•	1000 * 60 * 60 * 24 gives days
-	•	1000L * 60 * 60 * 24 * 365 gives approximate years
+	•	1000L * 60 * 60 * 24 * 365 gives approximate years\
+
+Java.time package
+
+LocalDate  - Represent a date
+LocalTime - Represent Time
+LocalDateTime -> Represent Date and Time
+DateTimeFormatter - > Formatter for displaying and parsing date and time object
 
