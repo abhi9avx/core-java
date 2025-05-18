@@ -77,7 +77,5 @@ public class Array_Deque_collection {
 	•	clear()
 ➤ Removes all elements from the deque, making it empty.
 
-⸻
-
-
  */
+
