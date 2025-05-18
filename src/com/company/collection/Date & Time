@@ -1,0 +1,53 @@
+Date and Time
+
+java.time -> package for date and time in java
+
+How java stores a date ?
+Date in java is stored in the frm of a long number .This long number holds the number of milisecond passed since 1 jan 1970
+
+JAVA ASSUME THAT 1900 IS START YEAR WHICH MENES IT CALCULATE YEEAR PASSED SINCE 1900 WHENEVER WE ASK IT FOR PASSED YEAR QUERY
+
+System.currentTimeMillis() return no of mili second passed once no of ms are calculated we can calculate minutes , second and year passed
+
+
+⸻
+
+📅 Date and Time in Java
+
+In Java, date and time are handled using the java.time package (introduced in Java 8). This package includes modern classes like LocalDate, LocalTime, LocalDateTime, etc., which make working with dates and times much easier.
+
+⸻
+
+🕒 How Java Stores a Date Internally?
+
+Java stores a date as a long number, which represents the number of milliseconds passed since January 1, 1970 (midnight UTC).
+This reference point is known as the Epoch Time.
+
+⸻
+
+🧮 What Does System.currentTimeMillis() Do?
+	•	The method System.currentTimeMillis() returns the number of milliseconds passed since Jan 1, 1970.
+	•	Using this value, we can calculate:
+	•	Seconds by dividing by 1000
+	•	Minutes by dividing by 1000 * 60
+	•	Hours by dividing by 1000 * 60 * 60
+	•	Days, years, and so on…
+
+⸻
+
+🔍 Note About Old Java Date API
+
+In older versions of Java (java.util.Date), year 1900 was considered the base year. So if you did something like date.getYear(), it would return the number of years since 1900, not the actual year.
+✅ Example: If the current year is 2025, it would return 125.
+
+This is why modern Java recommends using java.time package, which is more accurate, readable, and avoids confusion.
+
+✅ Explanation:
+	•	System.currentTimeMillis() returns the time in milliseconds since 1 Jan 1970.
+	•	Dividing by:
+	•	1000 gives seconds
+	•	1000 * 60 gives minutes
+	•	1000 * 60 * 60 gives hours
+	•	1000 * 60 * 60 * 24 gives days
+	•	1000L * 60 * 60 * 24 * 365 gives approximate years
+
