@@ -60,3 +60,18 @@ public class ExceptionHandeling{
         sc.close();
     }
 }
+
+/*
+
+Block
+Description
+try
+Code that might throw an exception is placed here.
+catch (ArithmeticException)
+Handles divide-by-zero or similar math issues.
+catch (ArrayIndexOutOfBoundsException)
+Handles access to an invalid array index.
+catch (Exception)
+Catches all other exceptions not previously caught.
+
+ */
