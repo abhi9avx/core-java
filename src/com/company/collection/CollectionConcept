@@ -1,0 +1,41 @@
+🔹 Collection Framework
+
+A Collection Framework represents a group of objects.
+Java Collections provide classes and interfaces that help us write code quickly and efficiently.
+
+⸻
+
+🔹 Why Do We Need Collections?
+
+We need collections for efficient storage and better manipulation of data in Java.
+
+For example, we use an array to store integers, but what if we want to:
+	•	Resize the array
+	•	Insert an element in between
+	•	Delete an element from the array
+	•	Apply operations to modify this array?
+
+In such cases, arrays become limited, and collections provide better solutions.
+
+⸻
+
+🔹 How Are Collections Available?
+
+Collections in Java are available as classes and interfaces under the java.util package.
+
+Here are some commonly used collections in Java:
+	•	ArrayList → For variable-size collections
+	•	Set → For distinct elements (no duplicates)
+	•	Stack → A LIFO (Last-In-First-Out) data structure
+	•	HashMap → For storing key-value pairs
+
+⸻
+Collection class is available in java.util package.
+collection class also provides static method for sorting and searching.
+
+📌 Quick Tip:
+
+To use any collection, just import:
+import java.util.*;
+And you’re ready to go!
+
