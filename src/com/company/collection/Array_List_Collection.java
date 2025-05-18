@@ -73,4 +73,23 @@ indexOf(value) -> Returns first index of element
 lastIndexOf() -> Returns last index of element
 size() -> Total number of elements
 
+
+✅ Use ArrayList when:
+	1.	Frequent Read/Access Operations
+	•	If you access elements using index often (list.get(i)), ArrayList is faster.
+	•	Internally backed by an array, so index-based access is O(1) (very fast).
+	2.	Rare Insertions/Deletions in the Middle
+	•	Adding/removing elements in the middle or beginning is slow (O(n)), because it shifts elements.
+	•	Best when you only add/remove at the end.
+	3.	Memory-Efficient
+	•	Takes less memory compared to LinkedList (no node objects, no extra pointers).
+
+📌 Use Case Examples:
+	•	Storing a list of user names or IDs
+	•	Frequent get() and set() operations
+	•	When size changes are occasional
+
+🧠 In Simple Words:
+	•	ArrayList = Fast access, ideal when modifying less
+	•	LinkedList = Fast insert/delete, ideal for dynamic changes
  */

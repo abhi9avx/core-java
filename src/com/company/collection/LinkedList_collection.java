@@ -71,4 +71,19 @@ indexOf(value) -> Finds first index of value
 clear() -> Clears all elements
 isEmpty() -> Checks if list is empty
 
+✅ Use LinkedList when:
+	1.	Frequent Insertions/Deletions at Beginning or Middle
+	•	Insert/delete is faster in the beginning or middle (O(1) for head/tail, O(n) for middle), no shifting.
+	•	Backed by a doubly linked list (each node has next and previous pointers).
+	2.	Less Index-Based Access
+	•	Accessing an element by index is slow (O(n)), because it must traverse nodes.
+	3.	Use as Stack/Queue/Deque
+	•	Has built-in methods like addFirst(), removeLast(), peek(), poll(), etc., ideal for queue or stack-like behavior.
+
+📌 Use Case Examples:
+	•	Implementing a browser history (Back/Forward)
+	•	Building a queue or stack
+	•	Frequent insert/delete operations in the middle or ends
+
+
  */
