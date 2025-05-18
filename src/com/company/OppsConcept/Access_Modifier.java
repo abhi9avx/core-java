@@ -28,7 +28,7 @@ public class Access_Modifier {
         System.out.println("public x = " + c.x);    // Accessible
         System.out.println("protected y = " + c.y); // Accessible (same package)
         System.out.println("default z = " + c.z);   // Accessible (same package)
-        // System.out.println("private a = " + c.a); // Error: private variable not accessible outside class
+        // System.out.println("private a = " + c.a); // ErrorPractice: private variable not accessible outside class
     }
 }
 

@@ -1,0 +1,63 @@
+
+⸻-----------
+Error & Exception
+
+No matter how smart we are, errors are our constant companions.
+With practice, we get better at finding, fixing, and understanding them.
+
+⸻
+
+Three Types of Errors in Java:
+	1.	Syntax Error
+	2.	Logical Error
+	3.	Run-Time Error → Also called Exception
+
+⸻
+
+1. Syntax Error (Faced by Programmer)
+
+These errors occur when the compiler finds something wrong with the structure of the code.
+It prevents the program from compiling.
+
+Examples:
+
+int a = 9    // → Missing semicolon
+a = a+;      // → Incomplete expression
+d = 5;       // → Variable 'd' not declared
+
+These are caught at compile-time and are usually easy to fix.
+
+⸻
+
+2. Logical Error (Faced by Programmer)
+
+A logical error or bug happens when the program compiles and runs but does not behave as expected.
+
+Examples:
+	1.	Message delivered to the wrong user
+	2.	Chat time displayed incorrectly
+	3.	Wrong page redirection
+	4.	Incorrect calculations or outputs
+
+These are harder to detect as the program runs without crashing but gives unexpected results.
+
+⸻
+
+3. Run-Time Error (Faced by User) — ⭐ Important
+
+These occur while the program is running. In Java, they are called Exceptions.
+
+Examples:
+	1.	Bad Input (e.g., dividing by zero, invalid user input)
+	2.	Resource Constraints (e.g., memory not available, file not found)
+	3.	Network failure or DB connection timeout
+	4.	Array Index Out of Bound
+	5.	Null Pointer Exception
+
+Java provides a strong Exception Handling mechanism to deal with these issues using:
+	•	try & catch blocks
+	•	throw, throws, and finally keywords
+
+These help in preventing application crashes and allow developers to handle errors gracefully.
+
+⸻

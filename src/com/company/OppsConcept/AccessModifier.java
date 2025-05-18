@@ -46,8 +46,8 @@ public class AccessModifier {
         MyEmployee abhinav = new MyEmployee();
 
         // ❌ Direct access not allowed due to `private` modifier
-        // abhinav.id = 89;  --> ❌ Error
-        // abhinav.name = "Code with Abhinav";  --> ❌ Error
+        // abhinav.id = 89;  --> ❌ ErrorPractice
+        // abhinav.name = "Code with Abhinav";  --> ❌ ErrorPractice
 
         // ✅ Using setter methods to assign values
         abhinav.setId(1234);
