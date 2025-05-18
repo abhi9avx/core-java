@@ -1,4 +1,4 @@
-=package com.company.collection;
+package com.company.collection;
 
 import java.util.Calendar;
 import java.util.TimeZone;
