@@ -100,3 +100,107 @@ There are mainly two types of exceptions:
 → Example: Integer.parseInt("abc")
 
 ⸻
+
+The throw Keywords
+
+the throw keyword is used to throw an exception explicitly by the programmer
+if(b==0){
+throw new ArithmeticException ("Divide by zero) ;
+}
+else{
+return a/b;
+}
+
+in similar way we can throw a user defined exception
+
+📌 Summary:
+	•	throw is used to manually throw exceptions during program execution.
+	•	Can be used with built-in exceptions (ArithmeticException, NullPointerException) or custom exceptions.
+	•	Useful for input validation, business logic checks, and custom error reporting.
+
+⸻
+
+✅ The throw Keyword in Java
+
+The throw keyword is used to explicitly throw an exception in Java — either a built-in exception or a user-defined (custom) one.
+
+
+public int divide(int a, int b) {
+    if (b == 0) {
+        // Manually throwing an ArithmeticException
+        throw new ArithmeticException("❌ Cannot divide by zero");
+    } else {
+        return a / b;
+    }
+}
+ This helps us take control over how and when exceptions should be raised, rather than relying on Java to do it automatically.
+
+
+ class MyCustomException extends Exception {
+     public MyCustomException(String message) {
+         super(message);
+     }
+ }
+🔸 Example – Throwing a Custom/User-Defined Exception:
+ public class Demo {
+     public static void main(String[] args) throws MyCustomException {
+         int age = 15;
+         if (age < 18) {
+             // Manually throwing our custom exception
+             throw new MyCustomException("❌ Age must be 18 or above to vote");
+         } else {
+             System.out.println("✅ You are eligible to vote.");
+         }
+     }
+ }
+
+
+✅ throws Keyword in Java – Explained Simply
+
+In Java, the throws keyword is used in a method declaration to indicate that the method might throw an exception.
+
+It alerts the programmer that they should be prepared to handle this exception using a try-catch block or by propagating it further.
+
+⸻
+
+🧠 Why use throws?
+	•	It doesn’t handle the exception itself.
+	•	Instead, it tells the caller: “Hey, this method might cause a problem — be ready!”
+
+⸻
+
+🔹 Syntax Example:
+
+public static int divide(int a, int b) throws ArithmeticException {
+    return a / b;
+}
+
+Here:
+	•	We’re declaring that this divide method might throw an ArithmeticException (like divide by zero).
+	•	The actual exception can be handled where this method is called.
+
+⸻
+
+🔸 Usage with try-catch:
+
+public static void main(String[] args) {
+    try {
+        int result = divide(10, 0);  // ❌ This will throw an ArithmeticException
+        System.out.println("Result: " + result);
+    } catch (ArithmeticException e) {
+        System.out.println("⚠️ Exception caught: " + e.getMessage());
+    }
+}
+
+
+⸻
+
+📌 Quick Summary:
+
+Keyword	What it does	Used in
+throw	Manually throw an exception	Inside method body
+throws	Declare that a method might throw one	In method signature
+
+
+⸻
+
