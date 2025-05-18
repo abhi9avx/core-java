@@ -58,3 +58,19 @@ public class Array_List_Collection {
         // list.subList(1, 3)      -> Returns elements from index 1 to 2
     }
 }
+
+/*
+Method -> Description
+add() -> Adds element to end
+add(index, value) -> Inserts at specific index
+addAll() -> Appends all elements from another list
+clear() -> Removes all elements
+contains() -> Checks if element is in the list
+remove(index) -> Removes element at index
+set(index, value) -> Updates element at index
+get(index) -> Retrieves element at index
+indexOf(value) -> Returns first index of element
+lastIndexOf() -> Returns last index of element
+size() -> Total number of elements
+
+ */
