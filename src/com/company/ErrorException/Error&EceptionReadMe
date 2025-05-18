@@ -61,3 +61,42 @@ Java provides a strong Exception Handling mechanism to deal with these issues us
 These help in preventing application crashes and allow developers to handle errors gracefully.
 
 ⸻
+
+Sure Abhinav! Here’s your note rewritten in a clearer and more professional way, while keeping the structure simple and beginner-friendly — great for learning or teaching content:
+
+⸻
+
+📌 What is an Exception in Java?
+
+An exception is an unexpected event that occurs during the execution of a program, which disrupts the normal flow of instructions.
+
+⸻
+
+🔄 Types of Exceptions in Java
+
+There are mainly two types of exceptions:
+	1.	Checked Exception
+👉 Also called Compile-Time Exception
+👉 These are checked by the compiler
+👉 Must be handled using try-catch or declared with throws
+	2.	Unchecked Exception
+👉 Also called Run-Time Exception
+👉 Occur during program execution
+👉 Not checked at compile time — handled only if needed
+
+⸻
+
+⚠️ Commonly Occurring Exceptions
+	1.	NullPointerException
+→ Accessing methods or variables on a null object
+	2.	ArithmeticException
+→ Dividing a number by zero (e.g., 100 / 0)
+	3.	ArrayIndexOutOfBoundsException
+→ Trying to access an array index that doesn’t exist
+	4.	IllegalArgumentException
+→ Passing an illegal or inappropriate argument to a method
+	5.	NumberFormatException
+→ Trying to convert an invalid string to a number
+→ Example: Integer.parseInt("abc")
+
+⸻
